@@ -1,5 +1,5 @@
 async function createPage() {
-    const response = await fetch(`http://localhost:3001/projects`, {
+    const response = await fetch(`https://project10backend-production.up.railway.app/projects`, {
         method: "GET",
         headers: {
             'Content-Type': 'application/json'

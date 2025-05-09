@@ -1,7 +1,7 @@
 async function getProject() {
     const selectedId = localStorage.getItem("selectedId");
 
-    const response = await fetch(`http://localhost:3001/projects/${selectedId}`, {
+    const response = await fetch(`https://project10backend-production.up.railway.app/projects/${selectedId}`, {
         method: "GET",
         headers: {
             'Content-Type': 'application/json'

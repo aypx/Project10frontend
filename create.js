@@ -18,7 +18,7 @@ async function addProject() {
         blurb: blurbInput,
     });
 
-    await fetch('http://localhost:3001/projects', {
+    await fetch('https://project10backend-production.up.railway.app/projects', {
         method: "POST",
         body: JSON.stringify({
             projectData: projectArray

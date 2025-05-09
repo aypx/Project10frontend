@@ -17,7 +17,8 @@ async function addProject() {
         image: imageInput,
         blurb: blurbInput,
     });
-
+    
+    console.log(projectArray);
     await fetch('https://project10backend-production.up.railway.app/projects', {
         method: "POST",
         body: JSON.stringify({

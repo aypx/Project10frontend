@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Create</title>
+        <script src="create.js"></script>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <nav id="navbar">
+            <a href="gallery.html">Gallery</a>
+            <a href="login.html">Login</a>
+            <a href="create.html">Create</a>
+        </nav>
+        <div id="main-container">
+            <h1>Add project</h1>
+            <form id="input-container">
+                <p>Title:</p>
+                <input type="text" id="title-input">
+                <p>Image:</p>
+                <input type="file" id="image-input">
+                <p>Blurb:</p>
+                <input type="text" id="blurb-input">
+            </form>
+            <button onclick="addProject()">Submit</button>
+        </div>
+    </body>
+</html>

@@ -24,6 +24,7 @@ async function createPage() {
         container.appendChild(image);
 
         const pageLink = document.createElement("a");
+        pageLink.classList.add("card-link");
         pageLink.href = `./project.html`;
         pageLink.addEventListener("click", () => {
             localStorage.setItem("selectedId", projects[i].id);

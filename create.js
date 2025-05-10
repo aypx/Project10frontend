@@ -3,7 +3,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
     console.log(token);
   
-    if (token === undefined) {
+    if (!token) {
       window.location.href = "login.html";
     }
 });

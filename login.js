@@ -17,7 +17,7 @@ async function getLogin() {
     const auth = await response.json();
     
     if (auth.token) {
+        console.log(auth.token);
         localStorage.setItem("authToken", auth.token);
-        window.location.href = "create.html";
     }
 }

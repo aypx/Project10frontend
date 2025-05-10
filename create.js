@@ -1,5 +1,7 @@
 window.addEventListener("DOMContentLoaded", () => {
     const token = localStorage.getItem("authToken");
+
+    console.log(token);
   
     if (token === undefined) {
       window.location.href = "login.html";
